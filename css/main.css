@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;  /* con lo anterior se le da el tamaño y con esto hacemos que sea valla al centro*/
+    list-style: none; /*quitamos los estilos por defecto, en este caso los puntos de enlistado */
+    justify-content: center;  /*hacemos que este centrado y justificado */
+    align-items: center;  /*hacemos que los items esten alineados y centrados*/
+}
+nav .nav-right-section a { /* se manda a llamar el nav y la etiqueta a (de ancla)*/
+    margin: 10px; /*espacio entre palabras puede ser mas o menos */
+    color: black;/* color de la letra*/
+}
+  /*ojo que las clases se llaman con . al inicio, abajo llamamos a dos clases, .nav y .menu */
+nav .nav-right-section .menu-icon {/*se esta llamando el nav, luego la clase nav y luego la clase menu icon */
+        background-image: url('https://static.thenounproject.com/png/756729-200.png');
+        background-repeat: no-repeat; /* evita que se repita la imagen*/
+        background-position: center; /*para que este centrada la imagen */
+        background-size: contain;/* para que tenga el tamaño del contenedor*/
+        width: 25px;
+        height: 25px;
+} /*finalmente arriba hicimos que en vez de la palabra icon en nuestra pagina aparesca un icono el cual es una imagen
+ de 25px de ancho y largo y la trajimos desde una url, no esta guardada o descargada */
+
+ nav .nav-right-section img {
+     border-radius: 50%;
+     margin-left: 10px;
+ }
+
+ main {
+     margin-top: 150px;
+     text-align: center;
+ }
+ main .main-logo { /*busca dentro del main la clase main-logo*/
+     width: 530px;
+     margin: 0 auto; /*con esto hacemos que sea flexible y que siempre el texto este al medio*/
+ }
+ main .main-logo img { /*busca en el main, la clase main logo, y la etiqueta img*/
+     width: 300px;  /*con esto modificamos el tamaño de la imagen, en este caso a 300px*/
+ }                   /*ojo que la imagen esta sacado de una url no esta en nuestro pc local*/
+
+ main .main-input {
+     width: 530px;
+     margin: 0 auto;
+     margin-bottom: 35px;/*con esto separamos los botones del input, se posicionan mas abajo*/
+ }
+
+ main .main-input-container { /*se crea un contenedor dentro del contenedor*/
+     width: 525px;
+     border-radius: 100px; /*se le da un borde redondo, para que no sea cuadrado*/
+     border: 1px solid #dfe1e5; /*se indica que el borde sea de 1 px solido y de ese color (gris)*/
+     display: flex; /*para mover el contenido*/
+     justify-content: center; /*justificarlo al centro*/
+     align-items: center; /*alineado al centro*/
+ }
+ main .main-input input { /*se llama al main, la clase main-input y la etiqueta input que necesitamos modificar*/
+     width: 450px; /*ancho del input*/
+     height: 40px; /*alto del input*/
+     border: none; /*sin borde ni una linea al posicionarse encima*/
+     outline: none;
+ }
+ main .main-input-container:hover {
+     box-shadow: 0 1px 6px 0 #20212447;
+     border-color: #dfe1e500;
+ }
+ main .main-input .search-icon {
+     background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png'); /* url de la imagen que quiero poner, en este caso una lupa*/
+     background-repeat: no-repeat;/* que no se repita la imagen si le queda espacio en el contenedor*/
+     background-position: center;/* que este centrada la imagen*/
+     background-size: contain; 
+     width: 18px; /*tamaño de la imagen*/
+     height: 18px;
+ }
+ main .main-input .micro-icon {
+     background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     width: 18px;
+     height: 18px;
+     cursor: pointer;/* mismas propiedades que el icono enterior pero con un cursos de pointer*/
+ }
+ main .main-button {
+     width: 530px;
+     margin: 0 auto;
+ }
+ main .main-button div {
+     display: inline-block; /*posiciona los bloques en linea*/
+ }
+ main .main-button button {/*llama a la clase button y al boton*/
+     height: 36px; /*tamaño del botton*/
+     background-color: #f2f2f2; /*color del boton*/
+     border: 0; /*sin borde*/
+     font-size: 14px;
+     color: #5f6368;
+     border-radius: 5px; /*borde redondeado*/
+     padding: 0 15px; 
+     margin-right: 15px; /*sepracion entre botones*/
+ }
+ main .main-button button:hover { /*hover hace el efecto al pasar sobre el boton */
+     border: 1px solido #c6c6c6; /*borde de 1 px solido para que se vea y de color gris*/
+     box-shadow: 0 1px 1px #000001; /*color al pasar sobre el boton*/
+     color: #222;
+ }
+
+ footer { /*contenido del footer, lo que va al final*/
+     width: 100%; /*tamaño del footer*/
+     height: 50px;
+     position: absolute; 
+     bottom: 0;
+     display: grid;
+     grid-template-columns: 1fr 1fr; /*dos fracciones, para que sean dos cuadriculas*/
+    align-items: center;/*alinea los elementos y los centra*/
+    font-size: 13px;
+    background-color: #f2f2f2; /*color del footer, dos posiciones, arriba y abajo*/
+    border-top: 1px solid #e4e4e4;
+ }
+
+ footer ul { /*propiedades para la etiqueta ul*/
+     margin: 10px;
+     list-style: none;
+     display: flex;
+     padding-left: 0;
+ }
+ footer .footer-left {  /*propiedades del footer izquierdo, se posicionan en la izquierda*/
+     justify-self: left;
+ }
+ footer .footer-right { /*propiedades del footer derecho, se posicionan en la derecha*/
+     justify-self: right;
+ }
+ footer ul li a {
+     margin: 10px;
+     color: #5f6368;
+ }

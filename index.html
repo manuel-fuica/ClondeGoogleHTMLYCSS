@@ -1,0 +1,77 @@
+<!DOCTYPE html><!--esta etiqueta le indica al navegador que se trata de un archivo html5-->
+<html lang="en">
+<head><!--esta es la cabeza de nuestro archivo y aqui se ponen los link que usaremos en nuestro archivo, ej los css-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css"><!--aca linkeamos nuestro archivo css, primero la carpeta y luego el archivo-->
+</head>
+<body>
+    <header><!--nos ayuda a definir en que parte estamos del archivo, en este caso en la cabecera-->
+        <nav>    <!--la clase es un identificados que le ponemos a una etiqueta html-->
+            <ul class="nav-right-section"> <!--con esto podemos darle un estilo unico en css-->
+                <li>
+                    <a href="">Correo</a><!--href nos sirve para agregar enlazar una carpeta local, y la a para mandarlo a un link-->
+                </li>         <!--se debe escribir despues del cierre de comillas-->
+                <li><a href="">Imagenes</a>
+                </li>
+                <li class="menu-icon"><a href=""></a>
+                </li> <!--en la opcion de ver puedo hacer que el codigo se vea solo en esta pagina y no temga ir corriendome hacia el lado -->
+                <li><a href=""><img src="https://lh3.googleusercontent.com/ogw/ADea4I7URR6vvMt8AawcF_f0kSO9srIfJPpgOLt9-8N_ig=s32-c-mo" alt=""></a> <!--alt ayuda a describir la imagen mostrada en caso de que no se cargue-->
+                </li>
+            </ul>
+        </nav>
+    </header> <!--3 secciones para, la imagen, el buscador y los botones -->
+    <main> <!--contenedor principal-->
+        <section class="main-logo"> <!--primera seccion ira nuestra imagen de google se debe crear desde cero la etiqueta-->
+            <img src="https://img.pngio.com/google-logo-2015-png-image-purepng-free-transparent-cc0-png-google-logo-transparent-10000_3382.png" alt="">
+        </section> <!--se crean 3 clases desde el padre hasta el hijo para diferenciar nuestro contenedor principal-->
+        <section class="main-input"> <!--creamos una seccion en donde tendremos un span para poner una image-->
+            <div class="main-input-container">  <!--luego un inmput para pedir que escriban un texto en el buscador-->
+                <span class="search-icon"><!--finalmente una a ya que el microfono es un link en google-->
+
+                </span>
+                <input type="text">
+                <a class="micro-icon"  href=""></a>
+            </div>
+        </section>
+        <section class="main-button">
+            <div>
+                <button>Buscar con Google</button>
+            </div>
+            <div>
+                <button>Me siento con suerte</button>
+            </div>
+        </section>
+    </main>
+    <footer><!--para el footer se crean dos clases ya que tenemos elementos a la derecha y a la izquierda-->
+        <ul class="footer-left">
+            <li>
+                 <a href="">Publicidad</a> <!--etiquetas ancla para los link indicados-->
+            </li>
+            <li>
+                <a href="">Negocios</a>
+            </li>
+            <li>
+                <a href="">Acerca de</a>
+            </li>
+            <li>
+                <a href="">Como funciona la busqueda</a>
+            </li>
+        </ul>
+        <ul class="footer-right">
+            <li>
+                <a href="">Privacidad</a>
+            </li>
+            <li>
+                <a href="">Condiciones</a>
+            </li>
+            <li>
+                <a href="">Preferencias</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html><!--las clases son genericas y se utilizan cuando vamos a utilizar el mismo estilo varias veces
+                y los id son unicos y se utilizan para un elemento que no va a cambiar y sera solo uno-->
